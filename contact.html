@@ -1,1 +1,207 @@
-<p1>This is where contact information goes</p1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | P & S Home Improvements</title>
+  <meta name="description" content="Request a free estimate from P & S Home Improvements in Central City, KY." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div>
+        <a href="tel:+12704469463"><b>(270) 446-9463</b></a>
+        <span class="dot"> • </span>
+        <a href="mailto:Melissaak428@gmail.com">Melissaak428@gmail.com</a>
+      </div>
+      <div class="right">
+        <span>Central City, KY</span>
+        <span class="dot">•</span>
+        <span>Veteran Owned & Operated</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="logo">P&S</div>
+        <div>
+          P & S Home Improvements
+          <small>Central City, Kentucky</small>
+        </div>
+      </a>
+
+      <input class="menu-toggle" type="checkbox" id="menuToggle" />
+      <label class="hamburger" for="menuToggle" aria-label="Open menu"><span></span></label>
+
+      <nav class="navlinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-dark" href="contact.html">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Contact</div>
+      <h1 class="h1">Request a free estimate</h1>
+      <p class="p" style="max-width: 70ch;">
+        Tell us what you’re looking to get done. If you can, include photos and a short description.
+        We’ll reply as soon as possible.
+      </p>
+
+      <div class="grid grid-2" style="margin-top:22px; align-items:start;">
+        
+        <!-- LEFT: Form Card -->
+        <div class="card">
+          <h2 class="h2" style="margin-bottom:6px;">Quick Quote Form</h2>
+          <p class="p" style="margin-bottom:14px;">
+            Fill this out and we’ll follow up. (This form can be wired to email later.)
+          </p>
+
+          <!-- NOTE: Static HTML can't send emails without a service.
+               For now this uses "mailto" so it opens their email app.
+               Later we can connect Formspree/Netlify for free. -->
+          <form action="mailto:Melissaak428@gmail.com" method="post" enctype="text/plain">
+            
+            <div class="grid" style="gap:12px;">
+              <div>
+                <label><b>Name</b></label><br />
+                <input name="Name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap:12px;">
+                <div>
+                  <label><b>Phone</b></label><br />
+                  <input name="Phone" type="tel" placeholder="(270) 555-1234" required />
+                </div>
+                <div>
+                  <label><b>Email</b></label><br />
+                  <input name="Email" type="email" placeholder="you@email.com" />
+                </div>
+              </div>
+
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap:12px;">
+                <div>
+                  <label><b>City</b></label><br />
+                  <input name="City" type="text" placeholder="Central City" />
+                </div>
+                <div>
+                  <label><b>Preferred Contact</b></label><br />
+                  <select name="Preferred Contact">
+                    <option>Call</option>
+                    <option>Text</option>
+                    <option>Email</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label><b>Service Needed</b></label><br />
+                <select name="Service Needed" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Remodeling</option>
+                  <option>Carpentry & Trim</option>
+                  <option>Basement Finishing</option>
+                  <option>Repairs / Handyman</option>
+                  <option>Flooring</option>
+                  <option>Sheds / Outdoor</option>
+                  <option>Other (describe below)</option>
+                </select>
+              </div>
+
+              <div>
+                <label><b>Project Details</b></label><br />
+                <textarea name="Project Details" rows="6" placeholder="What do you want done? Timeline? Any special notes?" required></textarea>
+              </div>
+
+              <div class="p" style="font-size: 13px;">
+                <b>Tip:</b> For fastest quotes, include rough measurements and photos.
+              </div>
+
+              <div style="display:flex; gap:10px; flex-wrap: wrap; margin-top:6px;">
+                <button class="btn btn-primary" type="submit">Send Request</button>
+                <a class="btn btn-dark" href="tel:+12704469463">Call Now</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- RIGHT: Contact Info + Expectations -->
+        <aside class="hero-card" aria-label="Contact details" style="align-self:start;">
+          <div class="line">
+            <div style="min-width:22px">📞</div>
+            <div>
+              <b>Phone</b>
+              <span><a href="tel:+12704469463">(270) 446-9463</a></span>
+            </div>
+          </div>
+
+          <div class="line">
+            <div style="min-width:22px">✉️</div>
+            <div>
+              <b>Email</b>
+              <span><a href="mailto:Melissaak428@gmail.com">Melissaak428@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="line">
+            <div style="min-width:22px">📍</div>
+            <div>
+              <b>Service Area</b>
+              <span>Central City, KY + Surrounding Areas</span>
+            </div>
+          </div>
+
+          <div class="mini">
+            <b>What to expect:</b><br />
+            We’ll respond as soon as possible. If a walkthrough is needed, we’ll schedule a time that works for you.
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <b>P & S Home Improvements</b><br />
+        <small>Veteran owned & operated • Central City, Kentucky</small><br /><br />
+        <small>
+          Phone: <a href="tel:+12704469463">(270) 446-9463</a> •
+          Email: <a href="mailto:Melissaak428@gmail.com">Melissaak428@gmail.com</a>
+        </small>
+      </div>
+      <div>
+        <small><b>Pages</b></small><br />
+        <small>
+          <a href="services.html">Services</a> •
+          <a href="gallery.html">Gallery</a> •
+          <a href="about.html">About</a> •
+          <a href="contact.html">Contact</a>
+        </small><br /><br />
+        <small>© <span id="year"></span> P & S Home Improvements. All rights reserved.</small>
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
