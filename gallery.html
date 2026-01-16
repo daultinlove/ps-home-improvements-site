@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Gallery | P & S Home Improvements</title>
-  <meta name="description" content="Recent work and project types from P & S Home Improvements in Central City, KY." />
+  <meta name="description" content="Project gallery for P & S Home Improvements in Central City, KY." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,10 +13,10 @@
     <div class="container">
       <div>
         <a href="tel:+15555555555"><b>(555) 555-5555</b></a>
-        <span class="dot"> • </span>
+        <span class="dot">•</span>
         <a href="mailto:email@email.com">email@email.com</a>
       </div>
-      <div class="right">
+      <div>
         <span>Central City, KY</span>
         <span class="dot">•</span>
         <span>Licensed &amp; Insured</span>
@@ -30,16 +30,13 @@
     <div class="container nav">
       <a class="brand" href="index.html">
         <img class="brand-logo" src="assets/logo/ps-logo.jpeg" alt="P & S Home Improvements logo">
-        <div class="brand-text">
-          <span class="brand-name">P &amp; S Home Improvements</span>
+        <div>
+          <div class="brand-name">P &amp; S Home Improvements</div>
           <small>Central City, Kentucky</small>
         </div>
       </a>
 
-      <input class="menu-toggle" type="checkbox" id="menuToggle" />
-      <label class="hamburger" for="menuToggle" aria-label="Open menu"><span></span></label>
-
-      <nav class="navlinks" aria-label="Main navigation">
+      <nav class="navlinks">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a class="active" href="gallery.html">Gallery</a>
@@ -47,33 +44,48 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="contact.html#estimate">Request an Estimate</a>
+      <a class="nav-cta" href="contact.html#estimate">Free Estimate</a>
     </div>
   </header>
 
   <section class="page-hero">
-    <div class="page-hero inner">
+    <div class="page-hero-inner">
       <h1>Gallery</h1>
-      <p>We update this regularly with completed projects. Want your project next?</p>
+      <p class="hero-sub">Demo placeholders — replace with real project photos after approval.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="contact.html#estimate">Request an Estimate</a>
-        <a class="btn btn-outline" href="tel:+15555555555">Call Now</a>
+        <a class="btn btn-primary" href="contact.html#estimate">Free Estimate</a>
+        <a class="btn btn-outline" href="services.html">View Services</a>
       </div>
     </div>
   </section>
 
-  <main class="section">
+  <section class="section">
     <div class="container">
-      <div class="grid gallery">
-        <div class="thumb"><div class="ph"></div><div class="cap">Bathroom refresh <small>Remodel / finish</small></div></div>
-        <div class="thumb"><div class="ph"></div><div class="cap">Trim + baseboards <small>Finish work</small></div></div>
-        <div class="thumb"><div class="ph"></div><div class="cap">Flooring install <small>Updated look</small></div></div>
-        <div class="thumb"><div class="ph"></div><div class="cap">Drywall repair <small>Clean patch + prep</small></div></div>
-        <div class="thumb"><div class="ph"></div><div class="cap">Door install <small>Fit + finish</small></div></div>
-        <div class="thumb"><div class="ph"></div><div class="cap">Small build <small>Practical upgrades</small></div></div>
+      <div class="gallery">
+        <div class="thumb"><div class="ph"></div><div class="cap">Bathroom refresh <small>Central City, KY</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Trim &amp; finish work <small>Clean details</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Flooring update <small>Before/after ready</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Drywall repair <small>Paint-ready finish</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Small build <small>Solid framing</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Interior refresh <small>Clean upgrade</small></div></div>
       </div>
+
+      <div class="cta" style="margin-top:22px;">
+        <div class="row">
+          <div>
+            <div class="kicker" style="color:#fff;">Free estimate</div>
+            <h2 class="h2" style="margin:8px 0 6px;">Want something like this done at your place?</h2>
+            <p>Send a quick request and we’ll follow up with next steps.</p>
+          </div>
+          <div class="btns" style="margin:0;">
+            <a class="btn btn-primary" href="contact.html#estimate">Free Estimate</a>
+            <a class="btn btn-outline" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </main>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -93,14 +105,11 @@
           <a href="about.html">About</a> •
           <a href="contact.html">Contact</a>
         </small><br /><br />
-        <small>© <span id="year"></span> P &amp; S Home Improvements. All rights reserved.</small>
+        <small>© <span id="year"></span> P &amp; S Home Improvements</small>
       </div>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </footer>
 
 </body>
 </html>
-
