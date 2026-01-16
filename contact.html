@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | P & S Home Improvements</title>
-  <meta name="description" content="Request a free estimate from P & S Home Improvements in Central City, KY. Licensed & insured, veteran-owned." />
+  <meta name="description" content="Request a free estimate from P & S Home Improvements in Central City, KY." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,10 +13,10 @@
     <div class="container">
       <div>
         <a href="tel:+15555555555"><b>(555) 555-5555</b></a>
-        <span class="dot"> • </span>
+        <span class="dot">•</span>
         <a href="mailto:email@email.com">email@email.com</a>
       </div>
-      <div class="right">
+      <div>
         <span>Central City, KY</span>
         <span class="dot">•</span>
         <span>Licensed &amp; Insured</span>
@@ -28,18 +28,15 @@
 
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="P & S Home Improvements Home">
+      <a class="brand" href="index.html">
         <img class="brand-logo" src="assets/logo/ps-logo.jpeg" alt="P & S Home Improvements logo">
-        <div class="brand-text">
-          <span class="brand-name">P &amp; S Home Improvements</span>
+        <div>
+          <div class="brand-name">P &amp; S Home Improvements</div>
           <small>Central City, Kentucky</small>
         </div>
       </a>
 
-      <input class="menu-toggle" type="checkbox" id="menuToggle" />
-      <label class="hamburger" for="menuToggle" aria-label="Open menu"><span></span></label>
-
-      <nav class="navlinks" aria-label="Main navigation">
+      <nav class="navlinks">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="gallery.html">Gallery</a>
@@ -47,88 +44,77 @@
         <a class="active" href="contact.html">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="tel:+15555555555">Call Now</a>
+      <a class="nav-cta" href="#estimate">Free Estimate</a>
     </div>
   </header>
 
-  <section class="section" style="padding-top:44px;">
-    <div class="container">
-      <div class="grid grid-2" style="align-items:start;">
-        <div>
-          <div class="kicker">Free estimate</div>
-          <h1 class="h1" style="margin-bottom:10px;">Request a Free Estimate</h1>
-          <p class="p" style="max-width:65ch;">
-            Tell us what you need and we’ll get back to you with next steps. For urgent jobs, calling is the quickest way to reach us.
-          </p>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Request a Free Estimate</h1>
+      <p class="hero-sub">
+        Tell us what you need and we’ll follow up with next steps. For urgent projects, calling is the fastest option.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#estimate">Free Estimate</a>
+        <a class="btn btn-outline" href="tel:+15555555555">Call Now</a>
+      </div>
+    </div>
+  </section>
 
-          <div class="btns" style="margin-top:14px;">
-            <a class="btn btn-primary" href="tel:+15555555555">Call (555) 555-5555</a>
-            <a class="btn btn-dark" href="mailto:email@email.com?subject=Estimate%20Request%20-%20P%20%26%20S%20Home%20Improvements">Email Us</a>
-          </div>
+  <section class="section" id="estimate">
+    <div class="container grid grid-2" style="align-items:start;">
+      <div>
+        <div class="kicker">Contact</div>
+        <h2 class="h2">Quick contact</h2>
+        <p class="p">Demo info for presentation — swap to real info after approval.</p>
 
-          <div class="checks" style="margin-top:18px;">
-            <div class="check"><i>✓</i><div><b>Licensed &amp; insured</b><div class="p">Professional work and peace of mind.</div></div></div>
-            <div class="check"><i>✓</i><div><b>Veteran-owned</b><div class="p">Respectful, detail-oriented, reliable.</div></div></div>
-            <div class="check"><i>✓</i><div><b>Serving Central City, KY</b><div class="p">And surrounding areas.</div></div></div>
-          </div>
+        <div class="checks" style="margin-top:16px;">
+          <div class="check"><i>📞</i><div><b>Phone</b><div class="p">(555) 555-5555</div></div></div>
+          <div class="check"><i>✉️</i><div><b>Email</b><div class="p">email@email.com</div></div></div>
+          <div class="check"><i>📍</i><div><b>Service Area</b><div class="p">Central City, KY + surrounding areas</div></div></div>
         </div>
 
-        <div class="card" id="estimate">
-          <h2 class="h2" style="margin-bottom:6px;">Estimate Request Form</h2>
-          <p class="p">Fill this out and we’ll reach out to schedule a walkthrough or discuss details.</p>
+        <p class="fineprint" style="margin-top:10px;">
+          After approval, we’ll wire this form to the preferred inbox (Formspree / Workspace / CRM).
+        </p>
+      </div>
 
-          <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
-          <form class="estimate-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="field-row">
-              <div class="field">
-                <label for="name">Full Name</label>
-                <input id="name" name="name" type="text" placeholder="John Smith" required />
-              </div>
-              <div class="field">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
-              </div>
-            </div>
+      <div class="card">
+        <h3 class="h3">Estimate Request</h3>
+        <p class="p">Use this form layout for the demo. (Currently uses a mailto action.)</p>
 
-            <div class="field-row">
-              <div class="field">
-                <label for="email">Email (optional)</label>
-                <input id="email" name="email" type="email" placeholder="you@example.com" />
-              </div>
-              <div class="field">
-                <label for="service">Project Type</label>
-                <select id="service" name="project_type" required>
-                  <option value="" selected disabled>Select one…</option>
-                  <option>Remodel / Refresh</option>
-                  <option>Repairs</option>
-                  <option>Finish Work</option>
-                  <option>Flooring</option>
-                  <option>Basement / Interior</option>
-                  <option>Small Build</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-
+        <form class="form" action="mailto:email@email.com" method="post" enctype="text/plain">
+          <div class="field-row">
             <div class="field">
-              <label for="details">Project Details</label>
-              <textarea id="details" name="details" rows="5" placeholder="What do you want done? Any timeline or details that help us quote accurately?" required></textarea>
+              <label for="name">Full Name</label>
+              <input id="name" name="Name" type="text" placeholder="John Smith" required />
             </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="Phone" type="tel" placeholder="(555) 555-5555" required />
+            </div>
+          </div>
 
-            <button class="btn btn-primary btn-full" type="submit">Send Request</button>
-            <p class="fineprint">Prefer calling? <a href="tel:+15555555555">Tap to call</a>.</p>
-          </form>
-        </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email (optional)</label>
+              <input id="email" name="Email" type="email" placeholder="john@email.com" />
+            </div>
+            <div class="field">
+              <label for="service">Service Type</label>
+              <input id="service" name="Service" type="text" placeholder="Remodel / Repair / Finish Work / Small Build" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Project Details</label>
+            <textarea id="details" name="Details" rows="5" placeholder="Tell us what you want done, timeline, and any details. Photos help with faster quotes."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send Request</button>
+          <p class="fineprint">Demo mode: submits through your email client.</p>
+        </form>
       </div>
-
-      <div class="contact-bottom-cta" style="padding-top:26px;">
-        <div class="contact-bottom-inner">
-          <h3>Want the fastest estimate?</h3>
-          <p>Send a couple photos and a short description to <b>email@email.com</b>.</p>
-          <a class="btn btn-primary" href="mailto:email@email.com?subject=Estimate%20Request%20-%20Photos">Email Photos</a>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -150,12 +136,10 @@
           <a href="about.html">About</a> •
           <a href="contact.html">Contact</a>
         </small><br /><br />
-        <small>© <span id="year"></span> P &amp; S Home Improvements. All rights reserved.</small>
+        <small>© <span id="year"></span> P &amp; S Home Improvements</small>
       </div>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </footer>
 
 </body>
