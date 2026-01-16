@@ -812,6 +812,53 @@ small{ color: var(--muted2); }
   }
 }
 
+/* =========================
+   SERVICES HERO (MATCH HOME)
+========================= */
+
+.services-hero {
+  background: linear-gradient(
+      rgba(15, 28, 23, 0.85),
+      rgba(15, 28, 23, 0.85)
+    ),
+    radial-gradient(900px 400px at 20% 0%, rgba(31,111,85,.6), transparent);
+  color: #ffffff;
+  padding: 88px 20px 72px;
+  text-align: center;
+}
+
+.services-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.services-hero p {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  font-size: 1.05rem;
+  color: #e4ece9;
+}
+
+.services-hero-trust {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #d6e2dc;
+}
+
+/* spacing between hero and cards */
+.services-grid {
+  margin-top: -40px;
+}
+
 
 /* =========================
    FOOTER
