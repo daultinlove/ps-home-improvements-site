@@ -53,5 +53,107 @@
     .field label{display:block;font-weight:800;margin-bottom:6px}
     .field input,.field select,.field textarea{width:100%;padding:12px;border-radius:12px;border:1px solid rgba(15,28,23,.14)}
     .btn-full{width:100%;justify-content:center}
-    .fineprint{font-size:.8
+    .fineprint{font-size:.85rem;opacity:.75;margin:8px 0 0}
+    .contact-bottom-cta{padding:44px 0 56px}
+    .contact-bottom-inner{background:rgba(15,28,23,.04);border:1px solid rgba(15,28,23,.12);border-radius:16px;padding:22px;text-align:center}
+    .contact-bottom-inner h3{margin:0 0 6px}
+    .contact-bottom-inner p{margin:0 0 14px;opacity:.85}
+    @media (max-width: 900px){
+      .contact-hero-inner{grid-template-columns:1fr}
+      .contact-trust-cards{grid-template-columns:1fr}
+      .field-row{grid-template-columns:1fr}
+    }
+  </style>
+</head>
 
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span>📍 Kentucky</span>
+        <span class="dot">•</span>
+        <span>Veteran Owned &amp; Operated</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:PHONE_HERE">📞 (123) 456-7890</a>
+        <span class="dot">•</span>
+        <a href="mailto:pshomeimprovementsllc@gmail.com">✉️ pshomeimprovementsllc@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="P&S Home Improvements Home">
+        <!-- If your logo file name is different, change LOGO_SRC below -->
+        <img id="brandLogo" src="assets/logo/ps-home-improvements-logo.jpg" alt="P&S Home Improvements logo"
+             onerror="this.style.display='none'; document.getElementById('brandText').style.display='inline-block';" />
+        <span id="brandText" class="brand-text" style="display:none;">P&amp;S Home Improvements</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="tel:PHONE_HERE">Call Now</a>
+    </div>
+  </header>
+
+  <!-- CONTACT -->
+  <section class="contact-hero">
+    <div class="container contact-hero-inner">
+      <div class="contact-hero-copy">
+        <h1>Request a Free Estimate</h1>
+        <p>
+          Tell us what you need and we’ll get back to you fast. For urgent projects,
+          calling or texting is the quickest way to reach us.
+        </p>
+
+        <div class="contact-quick-actions">
+          <a class="btn-primary" href="tel:PHONE_HERE">📞 Call Now</a>
+          <a class="btn-secondary" href="sms:PHONE_HERE">💬 Text Us</a>
+        </div>
+
+        <div class="contact-trust-cards">
+          <div class="trust-card">
+            <div class="trust-title">Fast Response</div>
+            <div class="trust-sub">Same-day or next-day reply</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-title">Free Estimates</div>
+            <div class="trust-sub">Clear, upfront communication</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-title">Quality Work</div>
+            <div class="trust-sub">Professional craftsmanship</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card" id="estimate">
+        <h2>Estimate Request</h2>
+        <p class="muted">Fill this out and we’ll contact you to schedule a walkthrough or discuss next steps.</p>
+
+        <!-- DEMO-READY OPTION (works immediately): opens user's email client -->
+        <form class="estimate-form" action="mailto:pshomeimprovementsllc@gmail.com" method="post" enctype="text/plain">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" name="Name" type="text" placeholder="John Smith" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="Phone" type="tel" placeholder="(555) 555-5555" required />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email (optional)</label>
