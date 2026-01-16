@@ -1,101 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services | P&S Home Improvements</title>
-  <meta name="description" content="Explore the home improvement services offered by P&S Home Improvements, including remodeling, carpentry, flooring, repairs, and more." />
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services | P & S Home Improvements</title>
+  <meta name="description" content="Remodels, repairs, finish work, flooring, and small builds in Central City, KY. Licensed & insured, veteran-owned. Free estimates." />
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- HEADER/NAV SAFETY STYLES (prevents plain stacked links if CSS differs between pages) -->
-  <style>
-    .topbar{background:#0f1c17;color:#e7efe9;font-size:.95rem}
-    .topbar a{color:#e7efe9;text-decoration:none}
-    .topbar a:hover{text-decoration:underline}
-    .topbar-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:10px 0}
-    .dot{opacity:.65;margin:0 8px}
-
-    .site-header{background:#fff;border-bottom:1px solid rgba(15,28,23,.12)}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
-    .brand img{height:42px;width:auto;display:block}
-    .brand-text{font-weight:800;letter-spacing:.2px}
-    .nav-links{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-    .nav-links a{text-decoration:none;color:inherit;font-weight:600;opacity:.9}
-    .nav-links a:hover{opacity:1;text-decoration:underline}
-    .nav-links a.active{text-decoration:underline;opacity:1}
-    .nav-cta{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;
-      padding:10px 14px;border-radius:10px;background:#1f6f55;color:#fff;white-space:nowrap}
-    .nav-cta:hover{filter:brightness(.95)}
-    @media (max-width: 820px){
-      .nav-inner{flex-direction:column;align-items:flex-start}
-      .nav-links{gap:12px}
-    }
-
-    /* SERVICES PAGE STYLES (safe if your styles.css already has them) */
-    .page-wrap{padding:40px 0 64px}
-    .breadcrumbs{font-size:.95rem;opacity:.75;margin:0 0 12px}
-    .page-title{font-size:clamp(2rem,3vw,2.6rem);margin:0 0 10px;line-height:1.15}
-    .page-sub{max-width:70ch;opacity:.85;margin:0 0 26px}
-
-    .services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-    .service-card{
-      background:#fff;border:1px solid rgba(15,28,23,.12);border-radius:16px;padding:18px;
-      box-shadow:0 8px 18px rgba(15,28,23,.06)
-    }
-    .service-card h3{margin:0 0 6px}
-    .service-card p{margin:0;opacity:.85}
-
-    .cta-band{
-      margin-top:26px;
-      background: radial-gradient(1100px 420px at 15% 0%, rgba(31,111,85,.35), rgba(15,28,23,.96));
-      color:#fff;border-radius:18px;padding:22px;border:1px solid rgba(255,255,255,.12)
-    }
-    .cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .cta-band h2{margin:0 0 6px;font-size:clamp(1.6rem,2.3vw,2rem)}
-    .cta-band p{margin:0;opacity:.9}
-    .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .btn-primary{background:#c28b2b;color:#111;padding:12px 18px;border-radius:999px;font-weight:900;text-decoration:none;display:inline-flex;gap:10px;align-items:center}
-    .btn-primary:hover{filter:brightness(.97)}
-    .btn-secondary{border:1px solid rgba(255,255,255,.35);padding:12px 18px;border-radius:999px;font-weight:900;text-decoration:none;color:#fff;display:inline-flex;gap:10px;align-items:center}
-    .btn-secondary:hover{background:rgba(255,255,255,.10)}
-
-    @media (max-width: 900px){
-      .services-grid{grid-template-columns:1fr}
-    }
-  </style>
 </head>
-
 <body>
 
-  <!-- TOP BAR -->
   <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-left">
-        <a href="tel:PHONE_HERE">📞 (270) 446-9463</a>
-        <span class="dot">•</span>
-        <a href="mailto:Melissaask428@gmail.com">✉️ Melissaask428@gmail.com</a>
+    <div class="container">
+      <div>
+        <a href="tel:+15555555555"><b>(555) 555-5555</b></a>
+        <span class="dot"> • </span>
+        <a href="mailto:email@email.com">email@email.com</a>
       </div>
-      <div class="topbar-right">
+      <div class="right">
         <span>Central City, KY</span>
         <span class="dot">•</span>
-        <span>Veteran Owned &amp; Operated</span>
+        <span>Licensed &amp; Insured</span>
+        <span class="dot">•</span>
+        <span>Veteran-Owned</span>
       </div>
     </div>
   </div>
 
-  <!-- HEADER / NAV -->
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="P&S Home Improvements Home">
-        <!-- Change src to your real logo file if needed -->
-        <img id="brandLogo" src="assets/logo/ps-home-improvements-logo.jpg" alt="P&S Home Improvements logo"
-             onerror="this.style.display='none'; document.getElementById('brandText').style.display='inline-block';" />
-        <span id="brandText" class="brand-text" style="display:none;">P&amp;S Home Improvements</span>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="P & S Home Improvements Home">
+        <img class="brand-logo" src="assets/logo/ps-logo.jpeg" alt="P & S Home Improvements logo">
+        <div class="brand-text">
+          <span class="brand-name">P &amp; S Home Improvements</span>
+          <small>Central City, Kentucky</small>
+        </div>
       </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
+      <input class="menu-toggle" type="checkbox" id="menuToggle" />
+      <label class="hamburger" for="menuToggle" aria-label="Open menu"><span></span></label>
+
+      <nav class="navlinks" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a class="active" href="services.html">Services</a>
         <a href="gallery.html">Gallery</a>
@@ -103,72 +47,73 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="tel:PHONE_HERE">Call Now</a>
+      <a class="nav-cta" href="contact.html#estimate">Request an Estimate</a>
     </div>
   </header>
 
-  <!-- PAGE CONTENT -->
-  <main class="page-wrap">
-    <div class="container">
-<section class="services-hero">
-  <div class="container services-hero-inner">
-    <h1>Our Services</h1>
-    <p>
-      Professional home improvement services delivered with quality craftsmanship,
-      clear communication, and reliable results.
-    </p>
-
-    <div class="services-hero-trust">
-      <span>✓ Free Estimates</span>
-      <span>✓ Quality Craftsmanship</span>
-      <span>✓ Reliable & Professional</span>
+  <section class="services-hero">
+    <div class="services-hero-inner">
+      <h1>Services</h1>
+      <p>
+        Remodels, repairs, finish work, and small builds — completed with quality craftsmanship and clear communication.
+        Serving Central City, KY and surrounding areas.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html#estimate">Request a Free Estimate</a>
+        <a class="btn btn-outline" href="tel:+15555555555">Call (555) 555-5555</a>
+      </div>
+      <div class="services-hero-trust">
+        <span>✓ Licensed &amp; Insured</span>
+        <span>✓ Veteran-Owned</span>
+        <span>✓ Free Estimates</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <main class="section">
+    <div class="container">
 
       <section class="services-grid" aria-label="Service list">
-        <article class="service-card">
-          <h3>Remodeling</h3>
-          <p>Kitchen/bath updates, room refreshes, and general interior improvements.</p>
+        <article class="card">
+          <h3 class="h3">Remodel &amp; Refresh</h3>
+          <p class="p">Bathrooms, kitchens, room updates, and improvements that add comfort and value.</p>
         </article>
 
-        <article class="service-card">
-          <h3>Carpentry &amp; Trim</h3>
-          <p>Framing, doors, trim, baseboards, and finish carpentry.</p>
+        <article class="card">
+          <h3 class="h3">Repairs</h3>
+          <p class="p">Drywall, doors, trim, flooring fixes, and punch-list work that looks finished.</p>
         </article>
 
-        <article class="service-card">
-          <h3>Basement Finishing</h3>
-          <p>Build out living space with clean layout and strong finishes.</p>
+        <article class="card">
+          <h3 class="h3">Finish Work</h3>
+          <p class="p">Trim, baseboards, installs, and detail work where clean lines matter.</p>
         </article>
 
-        <article class="service-card">
-          <h3>Flooring</h3>
-          <p>Install/replace flooring options based on your budget and needs.</p>
+        <article class="card">
+          <h3 class="h3">Flooring</h3>
+          <p class="p">Installation and replacement based on your needs, style, and budget.</p>
         </article>
 
-        <article class="service-card">
-          <h3>Repairs &amp; Handyman</h3>
-          <p>Punch list work, repairs, and small projects around the home.</p>
+        <article class="card">
+          <h3 class="h3">Basement / Interior</h3>
+          <p class="p">Make unused space usable with strong layout and solid finishes.</p>
         </article>
 
-        <article class="service-card">
-          <h3>Outdoor / Sheds</h3>
-          <p>Outdoor projects and structures built to last.</p>
+        <article class="card">
+          <h3 class="h3">Small Builds</h3>
+          <p class="p">Practical builds and upgrades — clean, solid, and built to last.</p>
         </article>
       </section>
 
-      <!-- CTA BAND -->
-      <section class="cta-band" aria-label="Request a quote">
+      <section class="cta-band" aria-label="Request a quote" style="margin-top:22px;">
         <div class="cta-band-inner">
           <div>
             <h2>Need a quote?</h2>
-            <p>Send photos + a quick description and we’ll reply fast.</p>
+            <p>Send a quick description (photos help) and we’ll reply with next steps.</p>
           </div>
           <div class="cta-actions">
-            <a class="btn-primary" href="contact.html#estimate">Request a Quote</a>
-            <a class="btn-secondary" href="tel:PHONE_HERE">Call Now</a>
+            <a class="btn btn-primary" href="contact.html#estimate">Request an Estimate</a>
+            <a class="btn btn-outline" href="tel:+15555555555">Call Now</a>
           </div>
         </div>
       </section>
@@ -176,14 +121,31 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> P&S Home Improvements. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <b>P &amp; S Home Improvements</b><br />
+        <small>Licensed &amp; insured • Veteran-owned • Central City, Kentucky</small><br /><br />
+        <small>
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a> •
+          Email: <a href="mailto:email@email.com">email@email.com</a>
+        </small>
+      </div>
+      <div>
+        <small><b>Pages</b></small><br />
+        <small>
+          <a href="services.html">Services</a> •
+          <a href="gallery.html">Gallery</a> •
+          <a href="about.html">About</a> •
+          <a href="contact.html">Contact</a>
+        </small><br /><br />
+        <small>© <span id="year"></span> P &amp; S Home Improvements. All rights reserved.</small>
+      </div>
     </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
