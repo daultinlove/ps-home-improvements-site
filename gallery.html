@@ -1,1 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery | P & S Home Improvements</title>
+  <meta name="description" content="Recent work and project types from P & S Home Improvements in Central City, KY." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div>
+        <a href="tel:+15555555555"><b>(555) 555-5555</b></a>
+        <span class="dot"> • </span>
+        <a href="mailto:email@email.com">email@email.com</a>
+      </div>
+      <div class="right">
+        <span>Central City, KY</span>
+        <span class="dot">•</span>
+        <span>Licensed &amp; Insured</span>
+        <span class="dot">•</span>
+        <span>Veteran-Owned</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo/ps-logo.jpeg" alt="P & S Home Improvements logo">
+        <div class="brand-text">
+          <span class="brand-name">P &amp; S Home Improvements</span>
+          <small>Central City, Kentucky</small>
+        </div>
+      </a>
+
+      <input class="menu-toggle" type="checkbox" id="menuToggle" />
+      <label class="hamburger" for="menuToggle" aria-label="Open menu"><span></span></label>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="contact.html#estimate">Request an Estimate</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero inner">
+      <h1>Gallery</h1>
+      <p>We update this regularly with completed projects. Want your project next?</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html#estimate">Request an Estimate</a>
+        <a class="btn btn-outline" href="tel:+15555555555">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+      <div class="grid gallery">
+        <div class="thumb"><div class="ph"></div><div class="cap">Bathroom refresh <small>Remodel / finish</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Trim + baseboards <small>Finish work</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Flooring install <small>Updated look</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Drywall repair <small>Clean patch + prep</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Door install <small>Fit + finish</small></div></div>
+        <div class="thumb"><div class="ph"></div><div class="cap">Small build <small>Practical upgrades</small></div></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <b>P &amp; S Home Improvements</b><br />
+        <small>Licensed &amp; insured • Veteran-owned • Central City, Kentucky</small><br /><br />
+        <small>
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a> •
+          Email: <a href="mailto:email@email.com">email@email.com</a>
+        </small>
+      </div>
+      <div>
+        <small><b>Pages</b></small><br />
+        <small>
+          <a href="services.html">Services</a> •
+          <a href="gallery.html">Gallery</a> •
+          <a href="about.html">About</a> •
+          <a href="contact.html">Contact</a>
+        </small><br /><br />
+        <small>© <span id="year"></span> P &amp; S Home Improvements. All rights reserved.</small>
+      </div>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
 
